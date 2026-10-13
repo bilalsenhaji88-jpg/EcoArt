@@ -188,9 +188,6 @@ color: #414943;
         padding: 30px;
         background: #e3eee7;
         border-radius: 12px;
-        box-sizing: border-box;
-        color: #424b46;
-        font-family: Arial, sans-serif;
     }
 
     .head {
@@ -229,8 +226,7 @@ color: #414943;
         border-radius: 6px;
     }
 
-    .data1 p,
-    .data2 p {
+    .data1 p, .data2 p {
         margin: 0;
         font-size: 13px;
         font-weight: 600;
@@ -238,12 +234,9 @@ color: #414943;
         line-height: 1.5;
     }
 
-    #datanum,
-    #datanum2 {
+    #datanum,#datanum2 {
         font-size: 38px;
         font-weight: 500;
-        margin-bottom: 6px;
-        letter-spacing: 0;
     }
 
     #datanum {
@@ -256,6 +249,9 @@ color: #414943;
 
     .donne {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 
     .donne1 {
@@ -263,7 +259,6 @@ color: #414943;
         justify-content: space-between;
         align-items: center;
         gap: 8px;
-        margin-bottom: 6px;
     }
 
     .donne1 p {
