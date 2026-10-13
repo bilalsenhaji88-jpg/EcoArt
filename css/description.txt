@@ -1,0 +1,166 @@
+# EcoArt — CSS Variables Explanation
+
+Our `variables.css` file stores the main design settings of our website: colors, typography, spacing, border radius, shadows, and container width.
+
+Using CSS variables helps us keep the design consistent and makes it easier to update the website without changing the same value in many places.
+
+## 1. Colors
+
+```css
+:root {
+  /* Main colors */
+  --color-background: #F2FCF4;
+  --color-white: #FFFFFF;
+  --color-text: #14422D;
+
+  /* Primary green */
+  --color-primary: #14422D;
+  --color-primary-hover: #0D3422;
+
+  /* EcoArt colors */
+  --color-green: #14422D;
+  --color-beige: #ECF6EE;
+
+  /* Other colors */
+  --color-border: #DCE6DE;
+  --color-text-light: #5D7465;
+
+  /* Extra colors */
+  --color-card: #E6F0E8;
+  --color-accent: #944A31;
+}
+```
+
+- `-color-background: #F2FCF4;` — Very light mint green for the main page background.
+- `-color-white: #FFFFFF;` — White for elements that need a clean background.
+- `-color-text: #14422D;` — Dark forest green for headings and main text.
+- `-color-primary: #14422D;` — Forest green for primary buttons and important elements.
+- `-color-primary-hover: #0D3422;` — Darker green when the user hovers over buttons.
+- `-color-green: #14422D;` — Natural green for eco-friendly details and highlighted sections.
+- `-color-beige: #ECF6EE;` — Pale green for section backgrounds.
+- `-color-border: #DCE6DE;` — Soft green-gray for borders and separators.
+- `-color-text-light: #5D7465;` — Muted green-gray for secondary text and descriptions.
+- `-color-card: #E6F0E8;` — Light green for cards and content blocks.
+- `-color-accent: #944A32;` — Terracotta brown for secondary buttons and decorative accents.
+
+These colors create a natural, calm, and eco-friendly visual identity for EcoArt.
+
+## 2. Typography
+
+```css
+--font-main: "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+--fs-sm: 0.875rem;
+--fs-base: 1rem;
+--fs-lg: 1.25rem;
+--fs-xl: 1.75rem;
+--fs-hero: clamp(2rem, 6vw, 3.5rem);
+```
+
+- `-font-main` — The main font used throughout the website. It uses Space Grotesk first, followed by fallback fonts if Space Grotesk is unavailable.
+- `-fs-sm: 0.875rem;` — Small text, such as labels and additional information.
+- `-fs-base: 1rem;` — Normal paragraph text.
+- `-fs-lg: 1.25rem;` — Larger text, such as card titles.
+- `-fs-xl: 1.75rem;` — Large section headings.
+- `-fs-hero: clamp(2rem, 6vw, 3.5rem);` — Responsive hero title size that adjusts to screen width while staying between 2rem and 3.5rem.
+
+## 3. Spacing
+
+Our spacing variables use multiples of 8 to keep distances consistent throughout the website.
+
+```css
+--space-1: 0.5rem;
+--space-2: 1rem;
+--space-3: 1.5rem;
+--space-4: 2rem;
+--space-6: 3rem;
+--space-8: 4rem;
+--space-12: 6rem;
+```
+
+- `-space-1: 0.5rem;` — 8px of spacing.
+- `-space-2: 1rem;` — 16px of spacing.
+- `-space-3: 1.5rem;` — 24px of spacing.
+- `-space-4: 2rem;` — 32px of spacing.
+- `-space-6: 3rem;` — 48px of spacing.
+- `-space-8: 4rem;` — 64px of spacing.
+- `-space-12: 6rem;` — 96px of spacing.
+
+These values can be used for margins, padding, and gaps between elements.
+
+## 4. Border Radius
+
+```css
+--radius: 16px;
+--radius-sm: 8px;
+```
+
+- `-radius: 16px;` — Rounded corners for cards and larger elements.
+- `-radius-sm: 8px;` — Smaller rounded corners for buttons, inputs, and other elements.
+
+Rounded corners help give the website a soft and friendly appearance.
+
+## 5. Shadow
+
+```css
+--shadow: 0 8px 24px rgba(22, 56, 38, 0.1);
+```
+
+This variable creates a soft shadow that gives cards and other elements depth without making the design look too heavy.
+
+The values represent the horizontal offset, vertical offset, blur, and shadow color with transparency.
+
+## 6. Container Width
+
+```css
+--container: 1200px;
+```
+
+- `-container: 1200px;` — Sets the maximum width for the main content, helping keep the website centered and readable on large screens.
+
+## 7. How to Use the Variables
+
+Instead of repeating the same color, spacing, or other value, we can reuse its variable in our CSS.
+
+Example:
+
+```css
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-main);
+}
+
+.card {
+  background-color: var(--color-card);
+  padding: var(--space-3);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+}
+
+button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.ethic {
+  background-color: var(--color-beige);
+}
+
+.btn--secondary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+```
+
+## Team Rule
+
+When we need to change a shared color, font size, spacing value, or other design setting, we should first check `variables.css`. This helps all team members maintain the same visual style across EcoArt.
+
+The `variables.css` file must be loaded before any stylesheet that uses its variables. Also, `1rem` is usually 16px when the browser's root font size is 16px.
+
+**Note:** The color values above are selected to approximate the colors in our screenshot. They are not verified pixel-by-pixel measurements.
