@@ -147,7 +147,7 @@ a{
     background-color: aqua;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 18px;
   }
   h1{
     font-size: 35px;
@@ -167,4 +167,17 @@ a{
   .fa-handshake{
     color:#14422d !important;
   }
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.list p {
+  margin: 0;
+color: #414943;
+  padding: 4px 15px;
+  background-color: #e6f0e8;
+  border-radius: 50px;
+}
 }
