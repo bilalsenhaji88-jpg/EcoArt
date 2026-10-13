@@ -2,6 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
+}
+body{
+    background-color: #f2f3ed;
 }
 
 html {
@@ -16,6 +20,7 @@ header{
     padding: 10px 40px;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 10px 25px rgba(15, 27, 45, 0.15);
 }
 header input , header label{
     display: none;
@@ -68,6 +73,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 10px 25px -10px rgba(15, 27, 45, 0.15);
 }
 .logo{
     width: 100%;
@@ -124,13 +130,41 @@ a{
 #check:checked ~ .menu {
     left: -1000px;
   }
-.actif{
-    color: #f3fdf59a;
-    background-color: #2d5a43;
-    padding: 8px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
 /* _____________________________________________________________________________________________ */
+  /* _______section1_________ */
+
+  .s1{
+    background-color: #14422d;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .left1{
+    background-color: #f2f3ed;
+  }
+  .right1{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  h1{
+    font-size: 35px;
+  }
+  .notif{
+    display: flex;
+    color: #14422d !important;
+    align-items: center;
+    background-color: #e6f0e8;
+    width: 290px;
+    gap: 4px;
+    
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  .fa-handshake{
+    color:#14422d !important;
+  }
 }
