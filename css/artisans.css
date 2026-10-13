@@ -171,6 +171,7 @@ a{
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  background-color: #14422d;
 }
 
 .list p {
