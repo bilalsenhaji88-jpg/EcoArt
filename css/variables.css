@@ -1,0 +1,57 @@
+  /* variables.css : EcoArt design  */
+
+:root {
+  /* Main colors */
+  --color-background: #F2FCF4;
+  --color-white: #FFFFFF;
+  --color-text: #14422D;
+
+  /* Primary green */
+  --color-primary: #14422D;
+  --color-primary-hover: #0D3422;
+
+  /* EcoArt colors */
+  --color-green: #14422D;
+  --color-beige: #ECF6EE;
+
+  /* Other colors */
+  --color-border: #DCE6DE;
+  --color-text-light: #5D7465;
+
+  /* Extra colors */
+  --color-card: #E6F0E8;
+  --color-accent: #944A31;
+
+
+
+/* Typography */
+  --font-main: "Space Grotesk", system-ui, -apple-system,
+               "Segoe UI", sans-serif;
+
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.75rem;
+  --fs-hero: clamp(2rem, 6vw, 3.5rem);
+
+  /* Spacing (multiples of 8px) */
+  --space-1: 0.5rem;   /* 8px */
+  --space-2: 1rem;     /* 16px */
+  --space-3: 1.5rem;   /* 24px */
+  --space-4: 2rem;     /* 32px */
+  --space-6: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+  --space-12: 6rem;    /* 96px */
+
+  /* Border radius */
+  --radius: 16px;
+  --radius-sm: 8px;
+
+  /* Shadow */
+  --shadow: 0 8px 24px rgba(22, 56, 38, 0.1);
+
+  /* Container width */
+  --container: 1200px;
+}
+
+ 
