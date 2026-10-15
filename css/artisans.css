@@ -13,6 +13,13 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     height: auto;
     background-color: #f3fdf5;
@@ -157,7 +164,7 @@ a {
 
     .s1 {
 
-        padding: 20px;
+
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -190,15 +197,18 @@ a {
     .fa-handshake {
         color: #14422d !important;
     }
+
     .list {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
     }
+
     .active {
         color: white !important;
         background-color: #14422d !important;
     }
+
     .list p {
         margin: 0;
         color: #414943;
@@ -233,20 +243,23 @@ a {
         gap: 12px;
     }
 
-    .data1, .data2 {
+    .data1,
+    .data2 {
         width: 50%;
         padding: 12px 10px;
         background: #f5f5f7;
         border-radius: 6px;
     }
 
-    .data1 p, .data2 p {
+    .data1 p,
+    .data2 p {
         margin: 0;
         font-size: 13px;
         font-weight: bold;
     }
 
-    #datanum,#datanum2 {
+    #datanum,
+    #datanum2 {
         font-size: 38px;
         font-weight: 500;
     }
@@ -309,6 +322,7 @@ a {
         background-color: #396a58;
         border-radius: 0px 20px 20px 0px;
     }
+
     .donnev2 {
         display: flex;
         gap: 10px;
@@ -338,26 +352,190 @@ a {
     #parad3 span {
         background: #235a45;
     }
+
     #parad4 span {
         background: #396a58;
     }
-    .safe{
+
+    .safe {
         display: flex;
         gap: 5px;
     }
+
     /* _____________________________________________________________________________________________________ */
     /* ______section2_______ */
-    .s2{
-        background-color: #14422d;
-        width: 100%;
+    .s2 {
         height: 20vh;
         display: flex;
-        
+        flex-direction: column;
+        gap: 10px;
+
     }
-    .top{
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top1 {
+        width: 100%;
         background-color: #e6f0e8;
+        border-radius: 10px 10px 0px 0px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
     }
-    .bottom{
-background-color: #974c39;
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
+
+    .donne {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 14px;
+    }
+
+    .donne img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .donne-do {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    #do-1 {
+        color: #a65338;
+        font-size: 9px;
+        font-weight: bold;
+    }
+
+    #do-2 {
+        color: #1c2925;
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    #do-3 {
+        color: #42524a;
+        font-size: 12px;
+    }
+
+    #pro-1 {
+        background-color: #33644f;
+        color: #ffffff;
+        padding: 5px 9px;
+        border-radius: 20px;
+        font-size: 10px;
+        width: 130px;
+    }
+    #description {
+        font-size: 14px;
+        color: #3c4b43;
+    }
+    .details {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .details p {
+        padding: 4px 9px;
+        border-radius: 20px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .det-1 {
+        background-color: #d9e8df;
+        color: #28533f;
+    }
+    #det-2 {
+        background-color: #f3d3c9;
+        color: #70392d;
+    }
+    #signature {
+        font-size: 10px;
+        font-weight: bold;
+        color: #45564d;
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+    .image {
+        height: 160px;
+        position: relative;
+        border-radius: 4px !important;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+
+
+    .name-img {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        background-color: #f4f2e9;
+        color: #28392f;
+        padding: 7px 6px;
+        font-size: 9px;
+        border-radius: 3px;
+    }
+    .end-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        background-color: #dbe6e0;
+        padding: 14px 20px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .explorer {
+        color: #1e513c;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    #reserve {
+        background-color: #994b35;
+        color: white;
+        padding: 6px 13px;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 600;
+        border: none;
+    }
+
+    /* _____________________________________________________________________________________________________ */
+    /* ______section3_______ */
+     .s3{
+        background-color: #14422d;
+        width: 100%;
+        height: 300vh;
+     }
 }
