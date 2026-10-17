@@ -21,19 +21,21 @@ main {
 }
 
 header {
-    height: auto;
+    height: 55px;
     background-color: #f3fdf5;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     padding: 20px;
     display: flex;
-    padding: 10px 40px;
+    padding: 30px 40px;
     justify-content: center;
     align-items: center;
     box-shadow: 0 10px 25px rgba(15, 27, 45, 0.15);
 }
 
-header input,
-header label {
+header input, header label {
     display: none;
 }
 
@@ -46,15 +48,15 @@ header label {
 }
 
 .logo img {
-    width: 42px;
-    height: 40px;
+    width: 48px;
+    height: 46px;
     background-color: #f2f3ed;
     padding: 6px;
 }
 
 .logo p {
     font-weight: bold;
-    font-size: 28px;
+    font-size: 33px;
     color: #14422d;
 }
 
@@ -69,21 +71,21 @@ header label {
     background-color: #2d5a43;
     padding: 8px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 a {
     color: inherit;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
 /* section 1*/
 .s1 {
         display: flex;
-        gap: 50px;
+        gap: 20px;
         padding: 20px;
         height: auto;
     }
@@ -93,7 +95,7 @@ a {
         display: flex;
         flex-direction: column;
         gap: 18px;
-        width: 65%;
+        width: 60%;
     }
 
     h1 {
@@ -149,7 +151,7 @@ a {
         display: flex;
         flex-direction: column;
         gap: 20px;
-         width: 35%;
+         width: 40%;
     }
 
     .head {
@@ -318,10 +320,10 @@ a {
           width: 100%;
     background-color: #e6f0e8;
     border-radius: 10px 10px 0 0;
-    padding: 14px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
     }
 
     .profile {
@@ -341,27 +343,30 @@ a {
     }
 
     .donne img {
-          width: 48px;
-    height: 48px;
+          width: 88px;
+    height: 88px;
     object-fit: cover;
     border-radius: 8px;
     }
 
     #do-1 {
         color: #a65338;
-        font-size: 9px;
+        font-size: 12px;
         font-weight: bold;
     }
 
     #do-2 {
         color: #1c2925;
-        font-size: 23px;
+        font-size: 33px;
         font-weight: 500;
     }
 
     #do-3 {
         color: #42524a;
-        font-size: 12px;
+        font-size: 16px;
+    }
+    #do-3 i{
+        padding: 0px 5px 0px 0px;
     }
 
     #pro-1 {
@@ -369,12 +374,17 @@ a {
         color: #ffffff;
         padding: 5px 9px;
         border-radius: 20px;
-        font-size: 10px;
+        font-size: 14px;
        text-align: center;
   
     }
+    #pro-1 i{
+        padding: 0px 5px 0px 0px;
+        color: white !important;
+    }
     #description {
-        font-size: 14px;
+        font-size: 18px;
+        width: 95%;
         color: #3c4b43;
     }
     .details {
@@ -386,7 +396,7 @@ a {
     .details p {
         padding: 4px 9px;
         border-radius: 20px;
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 600;
     }
     .det-1 {
@@ -398,23 +408,27 @@ a {
         color: #70392d;
     }
     #signature {
-        font-size: 10px;
+        font-size: 13px;
         font-weight: bold;
         color: #45564d;
     }
     .photos{
         width: 100%;
+           display: flex;
+        flex-direction: column;
+        gap: 11px;
     }
     .images {
         display: flex;
         /* flex-direction: column; */
+        justify-content: space-between;
         gap: 8px;
         width: 100%;
+        height: auto;
     }
     .image {
-            width: calc((100% - 12px) / 3);
-             height: 130px;
-             min-width: 0;
+        height: auto;
+        width: 33%;
         overflow: hidden;
         position: relative;
         border-radius: 4px !important;
@@ -422,11 +436,14 @@ a {
 
     .image img {
         width: 100%;
-        height: 100%;
+        height: 300px;
         object-fit: cover;
         border-radius: 5px;
     }
-
+   #imagex2{
+         
+    transform: scale(1.4);
+   }
 
 
     .name-img {
@@ -436,7 +453,7 @@ a {
         background-color: #f4f2e9;
         color: #28392f;
         padding: 7px 6px;
-        font-size: 9px;
+        font-size: 12px;
         border-radius: 3px;
     }
     .end-top {
@@ -451,7 +468,7 @@ a {
 
     .explorer {
         color: #1e513c;
-        font-size: 11px;
+        font-size: 14px;
         font-weight: bold;
     }
 
@@ -460,9 +477,13 @@ a {
         color: white;
         padding: 6px 13px;
         border-radius: 4px;
-        font-size: 11px;
+        font-size: 14px;
         font-weight: 600;
         border: none;
+    }
+    #reserve i{
+        padding: 0px 5px 0px 0px ;
+        color: white !important;
     }
 
     /* s3 */
@@ -476,22 +497,24 @@ a {
     display: flex;
     align-items: center;
     gap: 20px;
+    justify-content: space-between;
     border-radius: 10px;
 }
-
-/* LEFT SIDE */
-
 .local01 {
-    width: calc(60% - 10px);
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 .local-titre {
-    font-size: 11px;
+    font-size: 14px;
     font-weight: bold;
     color: #14422d;
+}
+.local-titre i{
+    padding: 0px 5px 0px 0px;
+     color: #14422d;
 }
 
 .local01 h2 {
@@ -507,9 +530,6 @@ a {
     color: #3c4b43;
     max-width: 680px;
 }
-
-/* STATISTICS */
-
 .where-are {
     width: 100%;
     display: flex;
@@ -518,9 +538,7 @@ a {
     gap: 10px;
 }
 
-.dett1,
-.dett2,
-.dett3 {
+.dett1, .dett2,.dett3 {
     width: 33%;
     display: flex;
     flex-direction: column;
@@ -528,34 +546,27 @@ a {
     gap: 4px;
 }
 
-.dett1 p,
-.dett2 p,
-.dett3 p {
+.dett1 p,.dett2 p,.dett3 p {
     font-size: 10px;
     font-weight: 600;
     color: #414943;
 }
 
-.dett1 .number,
-.dett2 .number,
-.dett3 .number {
+.dett1 .number,.dett2 .number,.dett3 .number {
     font-size: 35px;
     font-weight: bold;
 }
 
-.dett1 .number,
-.dett3 .number {
+.dett1 .number,.dett3 .number {
     color: #1e513c;
 }
 
 .dett2 .number {
     color: #a65338;
 }
-
-/* RIGHT SIDE - MAP */
-
 .local2 {
-    width: calc(40% - 10px);
+    width: 40%;
+    height: 286px;
     background-color: #f5f5f7;
     border-radius: 10px;
     padding: 12px;
@@ -597,7 +608,7 @@ a {
 
 .local2 iframe {
     width: 100%;
-    height: 180px;
+    height: 100%;
     border: none;
     border-radius: 5px;
 }
@@ -688,8 +699,7 @@ a {
     /* _______section1_________ */
 
     .s1 {
-
-
+        
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -700,10 +710,12 @@ a {
         display: flex;
         flex-direction: column;
         gap: 18px;
+        width: 100%;
     }
 
     h1 {
-        font-size: 35px;
+        font-size: 38px;
+        width: 90%;
     }
 
     .notif {
@@ -921,7 +933,7 @@ a {
 
     .profile {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 10px;
     }
 
@@ -968,7 +980,7 @@ a {
         padding: 5px 9px;
         border-radius: 20px;
         font-size: 10px;
-        width: 130px;
+        width: 30%;
     }
     #description {
         font-size: 14px;
@@ -1004,19 +1016,31 @@ a {
         flex-direction: column;
         gap: 8px;
         width: 100%;
+        align-items: center;
     }
     .image {
-        height: 160px;
+        height: auto;
+        width: 80%;
         position: relative;
         border-radius: 4px !important;
     }
 
     .image img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
+       
         border-radius: 5px;
+        
     }
+    #imagex2{
+         
+    transform: scale(1.4);
+    }
+    #imagex{
+        height: 260px;
+        
+    }
+    
 
 
 
@@ -1069,6 +1093,7 @@ a {
      .local01{
         display: flex;
         gap: 12px;
+        width: 100%;
         flex-direction: column;
      }
      .local-titre{
@@ -1082,7 +1107,6 @@ a {
      }
      .where-are{
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         gap: 10px;
      }
@@ -1118,11 +1142,12 @@ a {
         display: flex;
         flex-direction: column;
         gap: 6px;
+        width: 100%;
         /* justify-content: center; */
         }
      .local2 iframe{
         width: 100%;
-        height: auto;
+
      }
     .local2 div {
         display: flex;
