@@ -715,7 +715,7 @@ a {
 
     h1 {
         font-size: 38px;
-        width: 90%;
+        width: 100%;
     }
 
     .notif {
@@ -1027,7 +1027,7 @@ a {
 
     .image img {
         width: 100%;
-        height: auto;
+        height: 200px;
        
         border-radius: 5px;
         
@@ -1036,10 +1036,7 @@ a {
          
     transform: scale(1.4);
     }
-    #imagex{
-        height: 260px;
-        
-    }
+
     
 
 
