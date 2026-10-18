@@ -1,9 +1,128 @@
+@import url("navbar.css");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
  
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+}
+
+.menu {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.menu a {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background: var(--color-card);
+}
+
+.menu a.actif {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+a.actif {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+@media (max-width: 1023px) {
+  .page-header {
+    flex-wrap: wrap;
+  }
+
+  .page-header .logo {
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .page-header .nav-menu {
+    position: static;
+    display: block;
+    flex: 1 1 100%;
+    width: 100%;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .page-header .nav-menu .menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-header .nav-menu .menu a {
+    flex: 1 1 125px;
+    text-align: center;
+  }
+
+  .page-header .menu-checkbox,
+  .page-header .menu-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-header .logo {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .page-header .nav-menu {
+    position: static;
+    display: block;
+    flex: 1 1 auto;
+    width: auto;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .page-header .nav-menu .menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+}
+
 :root {
     --fond: #f2fcf4;
     --carte: #eaf4ec;

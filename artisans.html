@@ -9,22 +9,25 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/images/EcoCraftLogoV2.png" alt="EcoCraftLogo">
-            <p>EcoArt</p>
-        </div>
-        
-        <nav>
-            <input type="checkbox" id="check">
-      <label for="check"><i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i></label>
-          <div class="menu">
-            <a href="index.html">Accueil</a>
-            <a href="produits.html" >Produits</a>
-            <a href="services.html">Services</a>
-            <a href="#artisans" class="actif">Artisans</a>
-            <a href="impact.html" >Contact</a>
-          </div>
+    <header class="site-header">
+        <a class="site-brand" href="index.html">
+            <img src="assets/images/EcoCraftLogoV2.png" alt="">
+            <span>EcoArt</span>
+        </a>
+        <input class="site-nav-checkbox" type="checkbox" id="site-menu-toggle">
+        <label class="site-nav-toggle" for="site-menu-toggle">
+            <span class="site-nav-icon" aria-hidden="true"></span>
+            <span class="site-sr-only">Ouvrir ou fermer le menu</span>
+            <span aria-hidden="true">Menu</span>
+        </label>
+        <nav class="site-navigation" aria-label="Navigation principale">
+            <div class="site-nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="produits.html">Catalogue</a>
+                <a href="services.html">Ateliers &amp; Services</a>
+                <a href="artisans.html" aria-current="page">Nos Artisans</a>
+                <a href="impact.html">Impact &amp; Contact</a>
+            </div>
         </nav>
     </header>
     <main>
