@@ -21,7 +21,7 @@
       .cta { padding: 4rem 3rem; }
     }
 
-header {
+header:not(.site-header) {
   position: sticky;
   top: 0;
   z-index: 10;

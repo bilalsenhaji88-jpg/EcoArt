@@ -30,7 +30,7 @@
       background: #14422D;
     }
 
-header {
+header:not(.site-header) {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -563,7 +563,7 @@ object-fit: contain;
     .cta p { max-width: 55ch; }
     .cta .kicker { color: #E6F0E8; }
 
-    header {
+    header:not(.site-header) {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -695,7 +695,7 @@ nav label {
 }
 
 @media (max-width: 640px) {
-  header {
+  header:not(.site-header) {
     position: relative;
   }
 

@@ -1,5 +1,4 @@
 @import url("variables.css");
-@import url("navbar.css");
 
 * {
     box-sizing: border-box;
@@ -176,7 +175,7 @@ object-fit: contain;
 
 }
 
-header {
+header:not(.site-header) {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -247,7 +246,7 @@ main {
     flex-direction: column;
 }
 
-header {
+header:not(.site-header) {
     height: 55px;
     background-color: #f3fdf5;
     width: 100%;
@@ -844,7 +843,7 @@ a {
 @media (max-width: 767px) {
 
     /* _____________header________________ */
-    header {
+    header:not(.site-header) {
         height: auto;
         background-color: #f3fdf5;
         width: 100%;
