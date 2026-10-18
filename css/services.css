@@ -1,6 +1,4 @@
 
-@import url("navbar.css");
-
 * {
   box-sizing: border-box;
 }
@@ -257,7 +255,7 @@ a {
   opacity: 0.9;
 }
 
-header {
+header:not(.site-header) {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -763,7 +761,7 @@ small {
     padding: var(--space-6) 0;
   }
 
-  header {
+  header:not(.site-header) {
     position: relative;
   }
 
