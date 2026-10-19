@@ -1,64 +1,31 @@
-# EcoArt
+## Découvrir EcoArt
 
-**Le design qui donne une seconde vie aux matières.**
+Découvrez EcoArt à travers son design, sa version en ligne et son code source. Les ressources ci-dessous permettent d'explorer l'identité visuelle du projet, de parcourir l'interface du site et de consulter son développement technique.
 
-EcoArt est un site vitrine consacré à l’upcycling et à l’artisanat local. Il met en valeur des objets créés à partir de matières revalorisées, les artisans qui les façonnent et les ateliers qui transmettent leur savoir-faire.
+### Site web
 
-## Découvrir le site
+Accédez à la version en ligne d'EcoArt pour découvrir ses différentes pages, parcourir son contenu et explorer l'expérience de navigation proposée aux visiteurs.
 
-| Page | Présentation |
-| --- | --- |
-| [Accueil](index.html) | Découvrir l’approche EcoArt et ses engagements |
-| [Catalogue](produits.html) | Explorer des créations artisanales upcyclées |
-| [Ateliers & Services](services.html) | En savoir plus sur les ateliers et les expériences proposées |
-| [Nos Artisans](artisans.html) | Rencontrer le collectif et ses savoir-faire |
-| [Impact & Contact](impact.html) | Découvrir la démarche et contacter EcoArt |
+[**Découvrir le site web →**](https://bilalsenhaji88-jpg.github.io/EcoArt/index.html)
 
-## Aperçu du projet
+### Design et prototype
 
-- Site multipage réalisé en HTML et CSS, sans framework ni étape de compilation.
-- Mise en page responsive et navigation adaptée aux petits écrans.
-- Styles partagés et styles propres aux différentes pages.
-- Visuels et identité graphique dédiés au projet.
+Consultez la conception d'EcoArt sur Figma pour explorer l'organisation des pages, les choix visuels et la structure de l'interface qui accompagne la réalisation du site.
 
-## Lancer le site en local
+[**Consulter le design sur Figma →**](https://www.figma.com/design/cRN4X1dsz6w3mZiInonDc2/EcoArt--Copy-?node-id=3009-1890&t=6llEWbxm0Rk0c0Ky-1)
 
-Aucune installation de dépendances n’est nécessaire. Depuis le dossier du projet, lancez un serveur HTTP local :
+### Code source
 
-```bash
-python3 -m http.server 8000
-```
+Retrouvez le dépôt GitHub du projet pour examiner les fichiers, comprendre l'organisation du code et suivre le travail de développement réalisé par l'équipe.
 
-Ouvrez ensuite [http://localhost:8000](http://localhost:8000) dans votre navigateur. Pour arrêter le serveur, utilisez `Ctrl+C` dans le terminal.
+[**Accéder au dépôt GitHub →**](https://github.com/bilalsenhaji88-jpg/EcoArt)
 
-Vous pouvez aussi ouvrir `index.html` directement dans un navigateur, mais le serveur local est préférable pour tester le site dans des conditions proches d’un hébergement web.
+### Présentation et retour d’expérience
 
-## Structure
+Au-delà de la réalisation du site web, nous avons préparé des ressources complémentaires afin de documenter notre travail et de partager notre expérience tout au long du projet.
 
-```text
-.
-├── index.html
-├── produits.html
-├── services.html
-├── artisans.html
-├── impact.html
-├── css/
-│   ├── variables.css
-│   ├── style.css
-│   ├── responsive.css
-│   ├── navbar.css
-│   └── styles propres aux pages
-├── assets/
-│   └── images/
-└── charte-graphic/
-```
+- **Présentation du projet :** un support qui retrace notre démarche, les différentes étapes de réalisation et le travail accompli par l’équipe.
+- **Difficultés rencontrées :** un document consacré aux principaux obstacles rencontrés pendant le brief, aux défis liés au travail en équipe et aux solutions mises en place pour avancer.
+- **Bilan de l’expérience :** un retour sur les compétences développées, les enseignements tirés et les améliorations que nous pourrons apporter à nos prochaines réalisations.
 
-## Technologies
-
-- HTML5
-- CSS3
-- Google Fonts (Space Grotesk)
-
----
-
-*EcoArt — création artisanale, matières réemployées, impact positif.*
+Ces ressources permettent de mieux comprendre le travail réalisé, les défis auxquels l’équipe a été confrontée et l’expérience acquise au cours de ce projet.
