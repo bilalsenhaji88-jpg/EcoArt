@@ -197,8 +197,9 @@ a {
 }
 
 .container {
-  width: min(100% - 2rem, var(--container));
-  margin: 0 auto;
+  width: calc(100% - clamp(2rem, 5vw, 5rem));
+  max-width: none;
+  margin-inline: auto;
 }
 
 .section {

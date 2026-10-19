@@ -1,0 +1,70 @@
+@keyframes eco-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.site-header {
+  animation: eco-fade-up 500ms ease-out both;
+}
+
+main > section {
+  animation: eco-fade-up 650ms ease-out both;
+}
+
+main > section:nth-of-type(2) {
+  animation-delay: 100ms;
+}
+
+main > section:nth-of-type(3) {
+  animation-delay: 180ms;
+}
+
+.catalogue-page .card,
+.ateliers-grid > .atelier-card {
+  animation: eco-fade-up 550ms ease-out both;
+}
+
+.catalogue-page .card:nth-child(2),
+.ateliers-grid > .atelier-card:nth-child(2) {
+  animation-delay: 70ms;
+}
+
+.catalogue-page .card:nth-child(3),
+.ateliers-grid > .atelier-card:nth-child(3) {
+  animation-delay: 140ms;
+}
+
+.catalogue-page .card:nth-child(4),
+.ateliers-grid > .atelier-card:nth-child(4) {
+  animation-delay: 210ms;
+}
+
+.site-nav-links a,
+.btn,
+.button {
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.site-nav-links a:hover,
+.btn:hover,
+.button:hover {
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
