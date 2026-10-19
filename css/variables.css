@@ -50,8 +50,8 @@
   /* Shadow */
   --shadow: 0 8px 24px rgba(22, 56, 38, 0.1);
 
-  /* Container width */
-  --container: 1200px;
+  /* Containers should use the available viewport width with page gutters. */
+  --container: 100%;
 }
 
  

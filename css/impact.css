@@ -1280,6 +1280,8 @@ main > hr {
 }
  
 @media (max-width: 767px) {
+
+
     #contact form label[for="nom"],
     #contact form label[for="email"],
     #contact form #nom,
@@ -1287,7 +1289,8 @@ main > hr {
         grid-column: 1;
         grid-row: auto;
     }
-=======
+}
+
 * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -1326,7 +1329,8 @@ main > hr {
 }
     /* layot*/
     .container {
-         width: 90%;
+         width: calc(100% - clamp(2rem, 5vw, 5rem));
+         max-width: none;
          margin: 0 auto;
     
     }

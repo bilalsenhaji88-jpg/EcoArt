@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez les ateliers artisanaux EcoArt et réservez votre expérience d'upcycling.">
-    <title>EcoArt | Ateliers & Services</title>
+    <meta name="description" content="Découvrez notre catalogue d’objets artisanaux upcyclés, fabriqués localement à partir de matières revalorisées.">
+    <title>EcoArt | Catalogue d’objets upcyclés</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/produit.css">
+    <link rel="stylesheet" href="css/animations.css">
+
 
 </head>
 <body>
@@ -36,542 +41,245 @@
     </header>
 
 
-    <main>
-      <div>
-        <section class="main-part-one">
+    <main id="main" class="catalogue-page">
 
-          <div class="main-part-one-main-div">
-            <div class="main-part-one-top">
-              <div class="main-part-one-top-icone">
-                <img src="assets/images/Icon.png" alt="icon">
-              </div>
-              <div class="main-part-one-top-tracabilité">
-                <p>TRAÇABILITÉ MATIÈRE 100% VÉRIFIÉE</p>
-              </div>
-              <div class="main-part-one-top-dot">
-                <p>.</p>
-              </div>
-              <div class="main-part-one-top-chaque">
-                <p>Chaque objet détourne des déchets nobles des filières d'enfouissement.</p>
-              </div>
-            </div>
+    <!-- Intro + key figures -->
+    <section class="section">
+      <div class="container intro">
+        <div>
+          <p class="kicker">FILIÈRE D’ÉCO-CONCEPTION FRANÇAISE</p>
+          <h1>Catalogue d’objets upcyclés & pièces uniques</h1>
+          <p class="light">
+            Des rebuts nobles réinventés en art de vivre durable. Chaque pièce est manufacturée à la main en série très limitée, traçable jusqu’au gisement source.
+          </p>
+        </div>
 
-            <div class="main-part-one_buttom">
-              <div class="main-part-one-buttom-icone">
-                <img src="assets/images/icon1.png" alt="icon">
-              </div>
-              <div class="main-part-one-buttom-livraison">
-                <p>Livraison ferroviaire & routière compensée</p>
-              </div>
-              <div class="main-part-one-buttom-bar">
-                <p>|</p>
-              </div>
-              <div class="main-part-one-buttom-emballages">
-                <p>Emballages 100% amidon de maïs compostable</p>
-              </div>
-            </div>
+        <div class="figures">
+          <div class="figure">
+            <p class="small">MATIÈRE DÉTOURNÉE</p>
+            <p class="big">14.8 <small>t</small></p>
+            <p class="small light">Depuis janvier 2025</p>
           </div>
-        </section>
-
-        <section class="main-part-two">
-          <div class="main-part-two-main-div">
-
-            <div class="main-part-two-right-part">
-
-              <div class="main-part-two-right-part-top">
-                <img src="assets/images/Background.png" alt="icon">
-                <p>FILIÈRE D'ÉCO-CONCEPTION FRANÇAISE</p>
-              </div>
-
-              <div class="main-part-two-right-part-heading">
-                <h1>Catalogue d'objets upcyclés & pièces uniques</h1>
-              </div>
-
-              <div class="main-part-two-right-part-buttom">
-                <p>Des rebuts nobles réinventés en art de vivre durable. Chaque pièce est manufacturée à la main en série très limitée, traçable jusqu'au gisement source.</p>
-              </div>
-            </div>
-
-            <div class="main-part-two-left-part">
-
-              <div class="main-part-two-left-part-right">
-                <div class="main-part-two-left-part-right-top">
-                  <p>MATIÈRE DÉTOURNÉE</p>
-                </div>
-                <div class="main-part-two-left-part-right-middle">
-                  <p class="main-part-two-left-part-right-middle-right">14.8</p>
-                  <p class="main-part-two-left-part-right-middle-left">t</p>
-                </div>
-                <div class="main-part-two-left-part-right-buttom">
-                  <p>Depuis janvier 2025</p>
-                </div>
-              </div>
-
-              <div class="main-part-two-left-part-middle">
-                <p>|</p>
-              </div>
-
-              <div class="main-part-two-left-part-left">
-                <div class="main-part-two-left-part-left-top">
-                  <p>ÉMISSIONS ÉVITÉES</p>
-                </div>
-                <div class="main-part-two-left-part-left-middle">
-                  <p class="main-part-two-left-part-left-middle-right">-32.4</p>
-                  <p class="main-part-two-left-part-left-middle-left">t</p>
-                </div>
-                <div class="main-part-two-left-part-left-buttom">
-                  <p>Équivalent CO₂ eq</p>
-                </div>
-              </div>
-            </div>
+          <div class="figure">
+            <p class="small">ÉMISSIONS ÉVITÉES</p>
+            <p class="big">-32.4 <small>t</small></p>
+            <p class="small light">Équivalent CO₂ eq</p>
           </div>
-        </section>
-
-        <section class="main-part-three">
-          <div class="main-part-three-main-div">
-            <div class="main-part-three-main-div-top">
-              <div class="main-part-three-search">
-                <img src="assets/images/Container.png" alt="search icon">
-                <input type="search" placeholder="Rechercher bois, carafe, chêne, lin...">
-              </div>
-
-              <div class="main-part-three-nav">
-                <div class="main-part-three-nav-text">
-                  <p>ESPACES:</p>
-                </div>
-            
-                  <button type="button">Tous</button>
-                  <button type="button">Salon</button>
-                  <button type="button">Art de la table</button>
-                  <button type="button">Luminaire</button>
-                  <button type="button">Décoration</button>
-                  <button type="button">Mobilier</button>
-              </div>
-
-              <div class="main-part-three-select">
-                <label for="select">TRIER:</label>
-                <div class="main-part-three-select-selection">
-                  <select id="select">
-                    <option value="Nouveautés d'atelier" selected>Nouveautés d'atelier</option>
-                  </select>
-                  <img src="assets/images/flesh-icon.png" alt="flesh icon">
-                </div>
-              </div>
-            </div>
-
-            <div class="main-part-three-main-div-buttom">
-              <div class="main-part-three-main-div-buttom-right">
-                <div class="main-part-three-main-div-buttom-right-text">
-                  <p>MATIÈRE REVALORISÉE :</p>
-                </div>
-                    <button type="button"><img src="assets/images/infifni.png">Toutes les matières</button>
-                    <button type="button"><img src="assets/images/tree.png">Bois revalorisé</button>
-                    <button type="button"><img src="assets/images/tissus-icon.png">Tissus & Textiles</button>
-                    <button type="button"><img src="assets/images/verre-icon.png">Verre surcyclé</button>
-                    <button type="button"><img src="assets/images/plastique-icon.png">Plastiques techniques</button>
-               </div>
-               <div class="main-part-three-main-div-buttom-left">
-                    <div class="main-part-three-main-div-buttom-left-first">
-                      <p>8 pièces uniques</p>
-                    </div>
-                    <p>disponibles</p>
-               </div>
-            </div>
-        </section>
-
-        <section class="main-part-foor">
-            <div class="main-part-foor-main-div">
-              <div class="grid-container">
-
-                <article class="grid-article">
-                  <div class="card-media">
-                    <img src="assets/images/photo1.jpg" alt="photo">
-                    <div class="top-badge">
-                        <div class="right-top-badge">
-                          <img src="assets/images/verre-icon.png" alt="verre icon">
-                          <p>100% Bouteilles de vin recyclées</p>
-                        </div>
-                        <div class="left-top-badge">
-                          <p>-4.2 kg CO₂</p>
-                        </div>
-                    </div>
-
-                    <div class="bottom-badge">
-                      <p>Série numérotée • 12 ex.</p>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <div class="card-content-top">
-                      <div class="card-content-top-top">
-                        <div class="card-cntent-top-top-right">
-                          <p>ART DE LA TABLE</p>
-                        </div>
-                        <div class="card-content-top-top-left">
-                          <div class="card-content-top-top-left-icon">
-                            <img src="assets/images/Container-icon.png" alt="icon">
-                          </div>
-                          <p>Atelier SolVerre (Lyon)</p>
-                        </div>
-                      </div>
-                      <div class="card-content-top-heading2">
-                      <h2>Carafe Écume Brute</h2>
-                      </div>
-                      <div class="card-content-top-p">
-                        <p>Fondue au four solaire basse température à partir de verre cullet…</p>
-                      </div>
-                    </div>
-
-                    <div class="card-content-bottom">
-                      <div class="card-content-bottom-ps">
-                        <p class="card-content-bottom-ps-top">48 €</p>
-                        <p class="card-content-bottom-ps-bottom">TVA incluse<p>
-                      </div>
-                      <button type="button"><img src="assets/images/Icon-shop.png">Ajouter</button>
-                    </div>
-                  </div>
-                </article>
-                <article class="grid-article">
-                  <div class="card-media">
-                    <img src="assets/images/photo2.png" alt="photo">
-                    <div class="top-badge">
-                        <div class="right-top-badge">
-                          <img src="assets/images/tree.png" alt="tree icon">
-                          <p>95% Chêne de charpente sauvé</p>
-                        </div>
-                        <div class="left-top-badge">
-                          <p>-8.9 kg CO₂</p>
-                        </div>
-                    </div>
-
-                    <div class="bottom-badge">
-                      <p>Plus que 2 exemplaires</p>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <div class="card-content-top">
-                      <div class="card-content-top-top">
-                        <div class="card-cntent-top-top-right">
-                          <p>LUMINAIRE</p>
-                        </div>
-                        <div class="card-content-top-top-left">
-                          <div class="card-content-top-top-left-icon">
-                            <img src="assets/images/Container-icon.png" alt="icon">
-                          </div>
-                          <p>Marc Verdier (Morvan)</p>
-                        </div>
-                      </div>
-                      <div class="card-content-top-heading2">
-                      <h2>Lampe d'ambiance 'Bille de Chêne'</h2>
-                      </div>
-                      <div class="card-content-top-p">
-                        <p>Poutre centenaire démontée d'une grange agricole, brossée à l'huile…</p>
-                      </div>
-                    </div>
-
-                    <div class="card-content-bottom">
-                      <div class="card-content-bottom-ps">
-                        <p class="card-content-bottom-ps-top">135 €</p>
-                        <p class="card-content-bottom-ps-bottom">Garantie 5 ans</p>
-                      </div>
-                      <button type="button"><img src="assets/images/Icon-shop.png">Ajouter</button>
-                    </div>
-                  </div>
-                </article>
-                <article class="grid-article">
-                  <div class="card-media">
-                    <img src="assets/images/photo3.png">
-                    <div class="top-badge">
-                        <div class="right-top-badge">
-                          <img src="assets/images/tissus-icon.png" alt="tissus icon">
-                          <p>Chutes de Lin Normand</p>
-                        </div>
-                        <div class="left-top-badge">
-                          <p>-3.1 kg CO₂</p>
-                        </div>
-                    </div>
-
-                    <div class="bottom-badge">
-                      <p>Pièce Unique (#47)</p>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <div class="card-content-top">
-                      <div class="card-content-top-top">
-                        <div class="card-cntent-top-top-right">
-                          <p>SALON</p>
-                        </div>
-                        <div class="card-content-top-top-left">
-                          <div class="card-content-top-top-left-icon">
-                            <img src="assets/images/Container-icon.png" alt="icon">
-                          </div>
-                          <p>Tissage Re-Vie (Roubaix)</p>
-                        </div>
-                      </div>
-                      <div class="card-content-top-heading2">
-                      <h2>Coussin Géométrique 'Parcelle'</h2>
-                      </div>
-                      <div class="card-content-top-p">
-                        <p>Assemblage minutieux de surplus de filatures françaises et rembourrage en…</p>
-                      </div>
-                    </div>
-
-                    <div class="card-content-bottom">
-                      <div class="card-content-bottom-ps">
-                        <p class="card-content-bottom-ps-top">55 €</p>
-                        <p class="card-content-bottom-ps-bottom">Fait main 100%</p>
-                      </div>
-                      <button type="button"><img src="assets/images/Icon-shop.png">Ajouter</button>
-                    </div>
-                  </div>
-                </article>
-                <article class="grid-article">
-                  <div class="card-media">
-                    <img src="assets/images/photo4.png">
-                    <div class="top-badge">
-                        <div class="right-top-badge">
-                          <img src="assets/images/Icon-articlefoor.png" alt="icon">
-                          <p>100% Déchets Plastiques Marins</p>
-                        </div>
-                        <div class="left-top-badge">
-                          <p>-12.4 kg CO₂</p>
-                        </div>
-                    </div>
-
-                    <div class="bottom-badge">
-                      <p>Série Éditeur • 8 ex.</p>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <div class="card-content-top">
-                      <div class="card-content-top-top">
-                        <div class="card-cntent-top-top-right">
-                          <p>MOBILIER</p>
-                        </div>
-                        <div class="card-content-top-top-left">
-                          <div class="card-content-top-top-left-icon">
-                            <img src="assets/images/Container-icon.png" alt="icon">
-                          </div>
-                          <p>Plastik Lab (Brest)</p>
-                        </div>
-                      </div>
-                      <div class="card-content-top-heading2">
-                      <h2>Assise Terrazzo 'Estran'</h2>
-                      </div>
-                      <div class="card-content-top-p">
-                        <p>Thermo-pressage sans colle de bouchons et filets de pêche récupérés…</p>
-                      </div>
-                    </div>
-
-                    <div class="card-content-bottom">
-                      <div class="card-content-bottom-ps">
-                        <p class="card-content-bottom-ps-top">180 €</p>
-                        <p class="card-content-bottom-ps-bottom">Inaltérable & lavable</p>
-                      </div>
-                      <button type="button"><img src="assets/images/Icon-shop.png">Ajouter</button>
-                    </div>
-                  </div>
-                </article>
-                <article class="grid-article">
-                  <div class="card-media">
-                    <img src="assets/images/photo1.jpg">
-                    <div class="top-badge">
-                        <div class="right-top-badge">
-                          <img src="assets/images/verre-icon.png" alt="verre icon">
-                          <p>100% Bouteilles de vin recyclées</p>
-                        </div>
-                        <div class="left-top-badge">
-                          <p>-4.2 kg CO₂</p>
-                        </div>
-                    </div>
-
-                    <div class="bottom-badge">
-                      <p>Série numérotée • 12 ex.</p>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <div class="card-content-top">
-                      <div class="card-content-top-top">
-                        <div class="card-cntent-top-top-right">
-                          <p>ART DE LA TABLE</p>
-                        </div>
-                        <div class="card-content-top-top-left">
-                          <div class="card-content-top-top-left-icon">
-                            <img src="assets/images/Container-icon.png" alt="icon">
-                          </div>
-                          <p>Atelier SolVerre (Lyon)</p>
-                        </div>
-                      </div>
-                      <div class="card-content-top-heading2">
-                      <h2>Carafe Écume Brute</h2>
-                      </div>
-                      <div class="card-content-top-p">
-                        <p>Fondue au four solaire basse température à partir de verre cullet…</p>
-                      </div>
-                    </div>
-
-                    <div class="card-content-bottom">
-                      <div class="card-content-bottom-ps">
-                        <p class="card-content-bottom-ps-top">48 €</p>
-                        <p class="card-content-bottom-ps-bottom">card-content-bottom-ps-</p>
-                      </div>
-                      <button type="button"><img src="assets/images/Icon-shop.png">Ajouter</button>
-                    </div>
-                  </div>
-                </article>
-                <article class="grid-article">
-                  <div class="card-media">
-                    <img src="assets/images/photo1.jpg">
-                    <div class="top-badge">
-                        <div class="right-top-badge">
-                          <img src="assets/images/verre-icon.png" alt="verre icon">
-                          <p>100% Bouteilles de vin recyclées</p>
-                        </div>
-                        <div class="left-top-badge">
-                          <p>-4.2 kg CO₂</p>
-                        </div>
-                    </div>
-
-                    <div class="bottom-badge">
-                      <p>Série numérotée • 12 ex.</p>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <div class="card-content-top">
-                      <div class="card-content-top-top">
-                        <div class="card-cntent-top-top-right">
-                          <p>ART DE LA TABLE</p>
-                        </div>
-                        <div class="card-content-top-top-left">
-                          <div class="card-content-top-top-left-icon">
-                            <img src="assets/images/Container-icon.png" alt="icon">
-                          </div>
-                          <p>Atelier SolVerre (Lyon)</p>
-                        </div>
-                      </div>
-                      <div class="card-content-top-heading2">
-                      <h2>Carafe Écume Brute</h2>
-                      </div>
-                      <div class="card-content-top-p">
-                        <p>Fondue au four solaire basse température à partir de verre cullet…</p>
-                      </div>
-                    </div>
-
-                    <div class="card-content-bottom">
-                      <div class="card-content-bottom-ps">
-                        <p class="card-content-bottom-ps-top">48 €</p>
-                        <p class="card-content-bottom-ps-bottom">card-content-bottom-ps-</p>
-                      </div>
-                      <button type="button"><img src="assets/images/Icon-shop.png">Ajouter</button>
-                    </div>
-                  </div>
-                </article>
-                <article class="grid-article">
-                  <div class="card-media">
-                    <img src="assets/images/photo1.jpg">
-                    <div class="top-badge">
-                        <div class="right-top-badge">
-                          <img src="assets/images/verre-icon.png" alt="verre icon">
-                          <p>100% Bouteilles de vin recyclées</p>
-                        </div>
-                        <div class="left-top-badge">
-                          <p>-4.2 kg CO₂</p>
-                        </div>
-                    </div>
-
-                    <div class="bottom-badge">
-                      <p>Série numérotée • 12 ex.</p>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <div class="card-content-top">
-                      <div class="card-content-top-top">
-                        <div class="card-cntent-top-top-right">
-                          <p>ART DE LA TABLE</p>
-                        </div>
-                        <div class="card-content-top-top-left">
-                          <div class="card-content-top-top-left-icon">
-                            <img src="assets/images/Container-icon.png" alt="icon">
-                          </div>
-                          <p>Atelier SolVerre (Lyon)</p>
-                        </div>
-                      </div>
-                      <div class="card-content-top-heading2">
-                      <h2>Carafe Écume Brute</h2>
-                      </div>
-                      <div class="card-content-top-p">
-                        <p>Fondue au four solaire basse température à partir de verre cullet…</p>
-                      </div>
-                    </div>
-
-                    <div class="card-content-bottom">
-                      <div class="card-content-bottom-ps">
-                        <p class="card-content-bottom-ps-top">48 €</p>
-                        <p class="card-content-bottom-ps-bottom">card-content-bottom-ps-</p>
-                      </div>
-                      <button type="button"><img src="assets/images/Icon-shop.png">Ajouter</button>
-                    </div>
-                  </div>
-                </article>
-                <article class="grid-article">
-                  <div class="card-media">
-                    <img src="assets/images/photo1.jpg">
-                    <div class="top-badge">
-                        <div class="right-top-badge">
-                          <img src="assets/images/verre-icon.png" alt="verre icon">
-                          <p>100% Bouteilles de vin recyclées</p>
-                        </div>
-                        <div class="left-top-badge">
-                          <p>-4.2 kg CO₂</p>
-                        </div>
-                    </div>
-
-                    <div class="bottom-badge">
-                      <p>Série numérotée • 12 ex.</p>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <div class="card-content-top">
-                      <div class="card-content-top-top">
-                        <div class="card-cntent-top-top-right">
-                          <p>ART DE LA TABLE</p>
-                        </div>
-                        <div class="card-content-top-top-left">
-                          <div class="card-content-top-top-left-icon">
-                            <img src="assets/images/Container-icon.png" alt="icon">
-                          </div>
-                          <p>Atelier SolVerre (Lyon)</p>
-                        </div>
-                      </div>
-                      <div class="card-content-top-heading2">
-                      <h2>Carafe Écume Brute</h2>
-                      </div>
-                      <div class="card-content-top-p">
-                        <p>Fondue au four solaire basse température à partir de verre cullet…</p>
-                      </div>
-                    </div>
-
-                    <div class="card-content-bottom">
-                      <div class="card-content-bottom-ps">
-                        <p class="card-content-bottom-ps-top">48 €</p>
-                        <p class="card-content-bottom-ps-bottom">card-content-bottom-ps-</p>
-                      </div>
-                      <button type="button"><img src="assets/images/Icon-shop.png">Ajouter</button>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-        </section>
+        </div>
       </div>
-    </main>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+      <div class="container">
+        <input type="search" class="search" placeholder="Rechercher bois, carafe, chêne, lin…" aria-label="Rechercher un produit">
+
+        <div class="chips">
+          <p>ESPACES :</p>
+          <button class="chip" aria-pressed="true">Tous</button>
+          <button class="chip">Salon</button>
+          <button class="chip">Art de la table</button>
+          <button class="chip">Luminaire</button>
+          <button class="chip">Décoration</button>
+          <button class="chip">Mobilier</button>
+        </div>
+
+        <div class="row">
+          <div class="chips">
+            <p>MATIÈRE REVALORISÉE :</p>
+            <button class="chip" aria-pressed="true">Toutes les matières</button>
+            <button class="chip">Bois revalorisé</button>
+            <button class="chip">Tissus & Textiles</button>
+            <button class="chip">Verre surcyclé</button>
+            <button class="chip">Plastiques techniques</button>
+          </div>
+
+          <div class="sort">
+            <label for="sort">TRIER :</label>
+            <select id="sort">
+              <option selected>Nouveautés d’atelier</option>
+              <option>Prix croissant</option>
+              <option>Prix décroissant</option>
+              <option>Impact CO₂</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="count">8 pièces uniques disponibles</p>
+      </div>
+    </section>
+
+    <!-- Product grid -->
+    <section class="section">
+      <div class="container">
+        <div class="grid">
+
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="photo">
+              <img src="assets/images/photo1.jpg" alt="Carafe Écume Brute">
+              <span class="badge">100 % Bouteilles de vin recyclées</span>
+              <span class="badge badge-right">-4.2 kg CO₂</span>
+              <span class="badge badge-bottom">Série numérotée · 12 ex.</span>
+            </div>
+            <div class="card-body">
+              <p class="small brown">ART DE LA TABLE</p>
+              <p class="small light">Atelier SolVerre (Lyon)</p>
+              <h2>Carafe Écume Brute</h2>
+              <p class="light">Fondue au four solaire basse température à partir de verre cullet…</p>
+              <div class="price-row">
+                <p class="price">48 € <small>TVA incluse</small></p>
+                <button class="btn btn-green btn-small">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="photo">
+              <img src="assets/images/photo2.png" alt="Lampe d’ambiance Bille de Chêne">
+              <span class="badge">95 % Chêne de charpente sauvé</span>
+              <span class="badge badge-right">-8.9 kg CO₂</span>
+              <span class="badge badge-bottom">Plus que 2 exemplaires</span>
+            </div>
+            <div class="card-body">
+              <p class="small brown">LUMINAIRE</p>
+              <p class="small light">Marc Verdier (Morvan)</p>
+              <h2>Lampe d’ambiance « Bille de Chêne »</h2>
+              <p class="light">Poutre centenaire démontée d’une grange agricole, brossée à l’huile…</p>
+              <div class="price-row">
+                <p class="price">135 € <small>Garantie 5 ans</small></p>
+                <button class="btn btn-green btn-small">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="photo">
+              <img src="assets/images/photo3.png" alt="Coussin Géométrique Parcelle">
+              <span class="badge">Chutes de Lin Normand</span>
+              <span class="badge badge-right">-3.1 kg CO₂</span>
+              <span class="badge badge-bottom">Pièce Unique (#47)</span>
+            </div>
+            <div class="card-body">
+              <p class="small brown">SALON</p>
+              <p class="small light">Tissage Re-Vie (Roubaix)</p>
+              <h2>Coussin Géométrique « Parcelle »</h2>
+              <p class="light">Assemblage minutieux de surplus de filatures françaises et rembourrage en…</p>
+              <div class="price-row">
+                <p class="price">55 € <small>Fait main 100 %</small></p>
+                <button class="btn btn-green btn-small">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card">
+            <div class="photo">
+              <img src="assets/images/photo4.png" alt="Assise Terrazzo Estran">
+              <span class="badge">100 % Déchets Plastiques Marins</span>
+              <span class="badge badge-right">-12.4 kg CO₂</span>
+              <span class="badge badge-bottom">Série Éditeur · 8 ex.</span>
+            </div>
+            <div class="card-body">
+              <p class="small brown">MOBILIER</p>
+              <p class="small light">Plastik Lab (Brest)</p>
+              <h2>Assise Terrazzo « Estran »</h2>
+              <p class="light">Thermo-pressage sans colle de bouchons et filets de pêche récupérés…</p>
+              <div class="price-row">
+                <p class="price">180 € <small>Inaltérable & lavable</small></p>
+                <button class="btn btn-green btn-small">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card">
+            <div class="photo">
+              <img src="assets/images/photo5.png" alt="Plateau Chêne & Laiton">
+              <span class="badge">Chêne de récupération</span>
+              <span class="badge badge-right">-6.7 kg CO₂</span>
+              <span class="badge badge-bottom">Série limitée · 6 ex.</span>
+            </div>
+            <div class="card-body">
+              <p class="small brown">ART DE LA TABLE</p>
+              <p class="small light">Atelier Bois Vivant (Nantes)</p>
+              <h2>Plateau Chêne & Laiton</h2>
+              <p class="light">Plateau massif en chêne de démolition, inserts laiton recyclé…</p>
+              <div class="price-row">
+                <p class="price">89 € <small>TVA incluse</small></p>
+                <button class="btn btn-green btn-small">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card">
+            <div class="photo">
+              <img src="assets/images/photo6.png" alt="Vase Amphore Verre">
+              <span class="badge">Verre de bouteilles</span>
+              <span class="badge badge-right">-5.3 kg CO₂</span>
+              <span class="badge badge-bottom">Pièce unique</span>
+            </div>
+            <div class="card-body">
+              <p class="small brown">DÉCORATION</p>
+              <p class="small light">Verre Nouveau (Bordeaux)</p>
+              <h2>Vase Amphore</h2>
+              <p class="light">Soufflé à la bouche à partir de verre de récupération locale…</p>
+              <div class="price-row">
+                <p class="price">72 € <small>Fait main</small></p>
+                <button class="btn btn-green btn-small">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="card">
+            <div class="photo">
+              <img src="assets/images/photo7.png" alt="Suspension Corde Chanvre">
+              <span class="badge">Chanvre & bois flotté</span>
+              <span class="badge badge-right">-2.8 kg CO₂</span>
+              <span class="badge badge-bottom">Série · 15 ex.</span>
+            </div>
+            <div class="card-body">
+              <p class="small brown">LUMINAIRE</p>
+              <p class="small light">Lumière Douce (Lille)</p>
+              <h2>Suspension Corde</h2>
+              <p class="light">Abat-jour en chanvre tressé et structure en bois flotté…</p>
+              <div class="price-row">
+                <p class="price">110 € <small>Garantie 3 ans</small></p>
+                <button class="btn btn-green btn-small">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="card">
+            <div class="photo">
+              <img src="assets/images/photo8.png" alt="Tabouret Bois Récup">
+              <span class="badge">Bois de palette & métal</span>
+              <span class="badge badge-right">-9.1 kg CO₂</span>
+              <span class="badge badge-bottom">Plus que 3 exemplaires</span>
+            </div>
+            <div class="card-body">
+              <p class="small brown">MOBILIER</p>
+              <p class="small light">Atelier Réemploi (Toulouse)</p>
+              <h2>Tabouret « Palette »</h2>
+              <p class="light">Assemblage de planches de palette et structure métallique récupérée…</p>
+              <div class="price-row">
+                <p class="price">95 € <small>Solide & durable</small></p>
+                <button class="btn btn-green btn-small">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
 
     <footer class="site-footer" id="impact">
         <div class="container footer-grid">
